@@ -15,7 +15,7 @@
 	</properties>
     <build>
         <!-- Source directory configuration -->
-        <sourceDirectory>src</sourceDirectory>
+        <sourceDirectory>src/test/resources/test-suites</sourceDirectory>
         <plugins>
             <!-- Following plugin executes the testng tests -->
             <plugin>
@@ -25,8 +25,7 @@
                 <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>BATS.xml</suiteXmlFile>
-                        <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/test-suites/BATS.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
